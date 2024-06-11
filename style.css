@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: proxima-nova, sans-serif;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+}
+
+#title{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+#containerBody{
+  margin-top: 20px;
+}
+
+#containerAdd{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+#inputAdd{
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  width: 70%;
+  border: 1px solid #ccc;
+  font-size: 18px;
+ /* box-shadow: 0 2px 3px rgb(0,0,0,0.5);*/
+}
+
+#buttonEnviar{
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+#containerList{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#buttonEnviar{
+  background-color: #625ae4;
+  border: 1px solid #625ae4;
+  border-radius: 3px;
+}
+
+#containerList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerItens{
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 80%;
+  transition: .6s;
+  box-shadow: 0 0 0 rgb(0,0,0,0);
+}
+
+.containerItens:hover{
+  transform: scale(1.1);
+  transition: .6s;
+  box-shadow: 0 2px 3px rgb(0,0,0,0.5);
+}
+
+.img{
+  width: 20px;
+  height: 20px;
+  transition: .6s;
+  display: block;
+}
+
+.containerImg{
+  display: flex;
+  gap: 12px;
+  
+}
+
+.imgList{
+  width: 12px;
+  height: 12px;
+  opacity: 0.20;
+  transition: .2s;
+}
+
+.imgList:hover{
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  transition: .2;
+}
+
+.imgFeito{
+  width: 12px;
+  height: 12px;
+  opacity: 0.20;
+  transition: .2s;
+}
+
+.imgFeito:hover{
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  transition: .2;
+}
+
+button{
+  background-color: white;
+  border: none;
+}
+
+.textTarefa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.text{
+  font-size: 15px;
+}
+
+.concluida{
+  text-decoration: line-through;
+  opacity: 0.25;
+}
+
+@media screen and(max-widht: 200px){
+  #inputAdd{
+    width: 70%;
+    font-size: 15px;
+  }
+}
